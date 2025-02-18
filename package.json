@@ -1,0 +1,15 @@
+{
+    "name": "sahodaran-website",
+    "version": "2.0.0",
+    "description": "Sahodaran LGBTQ+ Support Organization Website",
+    "main": "landing.html",
+    "scripts": {
+        "start": "echo 'Static site - no build required'",
+        "deploy": "vercel",
+        "deploy:prod": "vercel --prod"
+    },
+    "keywords": ["lgbtq", "support", "nonprofit", "website"],
+    "author": "Sahodaran Organization",
+    "license": "UNLICENSED",
+    "private": true
+}

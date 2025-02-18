@@ -1,0 +1,151 @@
+/* Achievements Page Styles */
+
+/* Achievements Hero Section */
+.achievements-hero {
+    background-color: var(--neon-green);
+    color: var(--bg-dark-secondary);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.achievements-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.achievements-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Comprehensive Achievements Styles */
+.comprehensive-achievements {
+    background-color: var(--bg-light);
+    padding: 4rem 0;
+}
+
+.comprehensive-achievements .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.comprehensive-achievements h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-card {
+    background-color: var(--bg-dark-secondary);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-icon {
+    background-color: var(--neon-green);
+    color: var(--bg-dark);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.achievement-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.achievement-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .achievements-hero {
+        padding: 2rem 0;
+    }
+
+    .achievements-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .achievements-hero p {
+        font-size: 1rem;
+    }
+
+    .comprehensive-achievements {
+        padding: 2rem 0;
+    }
+
+    .comprehensive-achievements h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .achievements-grid {
+        gap: 1rem;
+    }
+
+    .achievement-card {
+        padding: 1.5rem;
+    }
+
+    .achievement-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    .achievement-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .achievement-card p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Smaller Mobile Devices */
+@media screen and (max-width: 480px) {
+    .achievements-hero h1 {
+        font-size: 2rem;
+    }
+
+    .comprehensive-achievements h2 {
+        font-size: 1.8rem;
+    }
+}

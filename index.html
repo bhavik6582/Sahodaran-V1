@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahodaran - Home</title>
+    
+    <!-- Performance Optimizations -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    
+    <!-- Stylesheets with Integrity and Crossorigin -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+    
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Sahodaran LGBTQ+ Support Organization Logo">
+                <span>Sahodaran</span>
+            </a>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch" class="theme-switch-input">
+                <label for="theme-switch" class="theme-switch-label">
+                    <span class="theme-switch-wrapper">
+                        <i class="ri-sun-line sun-icon"></i>
+                        <i class="ri-moon-line moon-icon"></i>
+                        <span class="theme-switch-button"></span>
+                    </span>
+                </label>
+            </div>
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-outline">
+                    Support Us
+                    <i class="ri-heart-line"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Pioneering LGBTQ+ Support</h1>
+                <p>First & largest MSM-focused CBO in Chennai</p>
+                <div class="hero-cta">
+                    <a href="#services" class="primary-button">
+                        Learn More
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>250+</h3>
+                        <p>Successful Projects</p>
+                    </div>
+                    <div class="stat">
+                        <h3>95%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="250" cy="250" r="200" fill="url(#paint0_radial)" opacity="0.3"/>
+                    <path d="M150 250C200 200 300 200 350 250" stroke="#4ADE80" stroke-width="4"/>
+                    <circle cx="200" cy="225" r="20" fill="#4ADE80"/>
+                    <circle cx="300" cy="225" r="20" fill="#4ADE80"/>
+                    <defs>
+                        <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 250) rotate(90) scale(200)">
+                            <stop stop-color="#4ADE80"/>
+                            <stop offset="1" stop-color="#4ADE80" stop-opacity="0"/>
+                        </radialGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span class="service-emoji">🤝</span>
+                    </div>
+                    <h3>Community Outreach</h3>
+                    <p>Identifying and reaching out to the community through dedicated support programs and initiatives.</p>
+                    <a href="#" class="service-link">Learn more <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span class="service-emoji">🎗️</span>
+                    </div>
+                    <h3>Safe Sex Education</h3>
+                    <p>Distributing condoms, lube, and educating about safer sex practices for community well-being.</p>
+                    <a href="#" class="service-link">Learn more <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span class="service-emoji">🔬</span>
+                    </div>
+                    <h3>Confidential Testing</h3>
+                    <p>Access to confidential STD testing and diagnoses in a safe, judgment-free environment.</p>
+                    <a href="#" class="service-link">Learn more <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="service-card additional-service hidden">
+                    <div class="service-icon">
+                        <span class="service-emoji">📚</span>
+                    </div>
+                    <h3>Legal Support</h3>
+                    <p>Providing legal guidance and support for LGBTQIA+ individuals facing discrimination or legal challenges.</p>
+                    <a href="#" class="service-link">Learn more <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="service-card additional-service hidden">
+                    <div class="service-icon">
+                        <span class="service-emoji">💬</span>
+                    </div>
+                    <h3>Counseling Services</h3>
+                    <p>Offering confidential, compassionate counseling to support mental health and personal growth.</p>
+                    <a href="#" class="service-link">Learn more <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="service-card additional-service hidden">
+                    <div class="service-icon">
+                        <span class="service-emoji">🌈</span>
+                    </div>
+                    <h3>Community Support Groups</h3>
+                    <p>Creating safe, supportive spaces for community members to connect, share, and grow together.</p>
+                    <a href="#" class="service-link">Learn more <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+            <div class="services-view-more">
+                <a href="services.html" id="view-more-btn" class="view-more-btn">
+                    <span class="button-text">View More Services</span>
+                    <i class="ri-add-line"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Sahodaran</h2>
+                    <div class="about-paragraphs">
+                        <p>Sahodaran, established in 1996 and registered in 1998 by Mr. Sunil Menon, Founder and Director, is the first Community Based Organization in Chennai run by and for the MSM community. Sahodaran works with MSM from low-income backgrounds that are at high risk for HIV/AIDS, combining HIV/AIDS prevention and care services with social support, counseling, and crisis intervention.</p>
+                        <p>In addition to safeguarding their health, Sahodaran empowers MSM/TG community members to become leaders in their own right, paving the way for greater social recognition for sexual minorities nationwide. Although focused primarily on MSM, since 2010, Sahodaran has fostered CBOs catering to the needs of TGs (transgender women), and begun to serve as a referral point for LGBT community members more broadly.</p>
+                        <p>We envision a world where sexual minorities can access safe sexual health services, legal support and social entitlements, and where atrocities against sexual minorities are eliminated.</p>
+                    </div>
+                </div>
+                <div class="founder-profile">
+                    <div class="founder-image">
+                        <img src="sunil-menon.jpg" alt="Sunil Menon - Founder of Sahodaran">
+                    </div>
+                    <div class="founder-details">
+                        <h3>Mr. Sunil Menon</h3>
+                        <p>Founder & Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mission-statement">
+                <h3>Our Mission</h3>
+                <p>Sahodaran is one of the oldest and longest-running LGBT organizations in India working ceaselessly for the welfare of LGBT communities in Chennai and by networking, referrals and functional relationships, extending support to LGBT in Tamil Nadu and India.</p>
+                <p>Today we seek to empower all sexual minorities to reach their full potential by providing a safe haven of community support, outreach, and activism. Our mission is to create a world that is safe for all people, regardless of orientation, a world without fear of violence or stigma.</p>
+                <p>Sahodaran began with kothis/gay men community. But soon we realized transgender needs and concerns were similar, due to which we provided technical support to the group of community members and helped create new community based organizations to support other LGBTIQA+ members. Nowadays our organization is more open to every LGBTIQA+ persons.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions or want to support our mission? Reach out to us!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="ri-map-pin-line"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>No. 27, New no.75, 3rd St Extn,<br>
+                                Railway colony, Aminjikarai,<br>
+                                Chennai-600029</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-phone-line"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>044-23740486<br>+91 9841865423</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-mail-line"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>sahodaranchennai@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-time-line"></i>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Monday - Saturday: 10:00 AM to 6:00 PM<br>
+                                Sundays: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest from Our Blog</h2>
+                <p>Insights, Stories, and Resources for the LGBTQ+ Community</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="pride-2023.jpg" alt="Pride 2023 Highlights">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Community</span>
+                        <h3>Pride 2023: A Celebration of Resilience</h3>
+                        <p>Reflecting on the vibrant and powerful moments from this year's Pride celebrations across Kerala.</p>
+                        <div class="blog-meta">
+                            <span><i class="ri-calendar-line"></i> July 15, 2023</span>
+                            <a href="blog.html#pride-2023" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="mental-health.jpg" alt="LGBTQ+ Mental Health">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Wellness</span>
+                        <h3>Mental Health in the LGBTQ+ Community</h3>
+                        <p>Understanding the unique mental health challenges and support strategies for LGBTQ+ individuals.</p>
+                        <div class="blog-meta">
+                            <span><i class="ri-calendar-line"></i> June 20, 2023</span>
+                            <a href="blog.html#mental-health" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="legal-rights.jpg" alt="Legal Rights Workshop">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Legal</span>
+                        <h3>Know Your Rights Workshop Recap</h3>
+                        <p>Highlights from our recent legal rights workshop for LGBTQ+ community members.</p>
+                        <div class="blog-meta">
+                            <span><i class="ri-calendar-line"></i> May 10, 2023</span>
+                            <a href="blog.html#legal-rights" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-cta">
+                <a href="blog.html" class="view-more-btn">
+                    <span class="button-text">View All Blog Posts</span>
+                    <i class="ri-add-line"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="container">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Sahodaran Logo">
+                    <h3>Sahodaran</h3>
+                    <p>Empowering LGBTQIA+ Communities in Tamil Nadu</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-links-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="achievements.html">Achievements</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Donate</a></li>
+                            <li><a href="#">Volunteer</a></li>
+                            <li><a href="#">Partner With Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="social-icon"><i class="ri-twitter-fill"></i></a>
+                        <a href="#" class="social-icon"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-icon"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sahodaran. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

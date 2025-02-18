@@ -1,0 +1,235 @@
+/* Services Page Specific Styles */
+.services-hero {
+    background-color: var(--bg-dark-secondary);
+    padding: 4rem 0;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.services-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.services-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-secondary);
+}
+
+.detailed-services {
+    padding: 4rem 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.service-card {
+    background-color: var(--bg-dark-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(74, 222, 128, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.service-icon .service-emoji {
+    font-size: 2.5rem;
+}
+
+.service-card h3 {
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+}
+
+.service-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--neon-green);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.service-link:hover {
+    color: var(--neon-green-hover);
+}
+
+.service-link i {
+    font-size: 1.25rem;
+}
+
+.services-cta {
+    background-color: var(--neon-green);
+    color: var(--text-primary);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.services-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.services-cta p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.nav-links .active {
+    color: var(--neon-green);
+    font-weight: 600;
+}
+
+/* Dark Mode Adjustments */
+body.dark-mode .services-hero,
+body.dark-mode .service-card {
+    background-color: #1E1E1E;
+}
+
+body.dark-mode .services-hero h1,
+body.dark-mode .service-card h3 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .services-hero p,
+body.dark-mode .service-card p,
+body.dark-mode .service-icon {
+    color: #A0A0A0;
+}
+
+body.dark-mode .service-icon {
+    background-color: rgba(74, 222, 128, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .services-hero {
+        padding: 2rem 0;
+    }
+
+    .services-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .detailed-services {
+        padding: 2rem 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .service-icon {
+        margin: 0 auto 1rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .service-link {
+        margin: 0 auto;
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .services-cta {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .services-cta h2 {
+        font-size: 2rem;
+    }
+
+    .services-cta p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Smaller Mobile Devices */
+@media screen and (max-width: 480px) {
+    .services-hero h1 {
+        font-size: 2rem;
+    }
+
+    .services-hero p {
+        font-size: 0.9rem;
+    }
+
+    .service-card {
+        padding: 1rem;
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .service-card h3 {
+        font-size: 1rem;
+    }
+
+    .service-card p {
+        font-size: 0.85rem;
+    }
+
+    .services-cta h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-cta p {
+        font-size: 0.9rem;
+    }
+}
