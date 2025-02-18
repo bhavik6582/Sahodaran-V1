@@ -37,9 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Set initial theme
         if (savedTheme) {
             applyTheme(savedTheme);
-        } else if (systemPrefersDark.matches) {
-            applyTheme('dark');
         } else {
+            // Always default to light mode
             applyTheme('light');
         }
 

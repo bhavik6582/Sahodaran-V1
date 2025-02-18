@@ -1,21 +1,23 @@
 /* Services Page Specific Styles */
 .services-hero {
-    background-color: var(--bg-dark-secondary);
-    padding: 4rem 0;
+    background-color: var(--neon-green);
+    color: var(--bg-dark-secondary);
     text-align: center;
-    color: var(--text-primary);
+    padding: 4rem 0;
 }
 
 .services-hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+    color: var(--bg-dark-secondary);
 }
 
 .services-hero p {
     font-size: 1.2rem;
     max-width: 700px;
     margin: 0 auto;
-    color: var(--text-secondary);
+    opacity: 0.9;
+    color: var(--bg-dark-secondary);
 }
 
 .detailed-services {
@@ -112,17 +114,28 @@
 }
 
 /* Dark Mode Adjustments */
-body.dark-mode .services-hero,
+body.dark-mode .services-hero {
+    background-color: var(--neon-green);
+    color: #000000;
+}
+
+body.dark-mode .services-hero h1 {
+    color: #000000;
+}
+
+body.dark-mode .services-hero p {
+    color: #000000;
+    opacity: 0.9;
+}
+
 body.dark-mode .service-card {
     background-color: #1E1E1E;
 }
 
-body.dark-mode .services-hero h1,
 body.dark-mode .service-card h3 {
     color: #FFFFFF;
 }
 
-body.dark-mode .services-hero p,
 body.dark-mode .service-card p,
 body.dark-mode .service-icon {
     color: #A0A0A0;
